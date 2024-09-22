@@ -1,90 +1,210 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 
-*{
+* {
   margin: 0;
-  padding: 0;  
+  padding: 0;
   box-sizing: border-box;
 }
 
-body{
-    font-family: Rubik;
+body {
+  font-family: Rubik;
 }
 
-ul{
-    list-style: none;
+ul {
+  list-style: none;
 }
 
-header{
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 28px;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 76px;
+}
+
+.header-left nav ul {
+  display: flex;
+  gap: 60px;
+  padding-top: 10px;
+}
+
+.active {
+  font-weight: 500;
+  border-bottom: 2px solid #5243c2;
+  padding-bottom: 10px;
+}
+
+.header-right button {
+  border: none;
+  border-radius: 20px;
+  padding: 8px 24px;
+  background-color: #ffeded;
+  color: #ff4d4f;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.header-left nav ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1480px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 146px;
+}
+
+.hero-left {
+  max-width: 482px;
+}
+
+.hero-left h1 {
+  font-size: 72px;
+  font-weight: 400;
+}
+
+.hero-left p {
+  font-size: 20px;
+  color: #676d77;
+}
+
+.burger {
+}
+
+.burger-top{
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    align-items: center;
-    max-width: 1500px;
-    margin: 0 auto;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 28px;
 }
 
-.header-left{
-    display: flex;
-    align-items: center;
-    gap: 76px;
+.burger-left h1 {
+  font-size: 72px;
+  font-weight: 400;
 }
 
-.header-left nav ul{
-    display: flex;
-    gap: 60px;
-    padding-top: 10px;
-}
-
-.active{
-    font-weight: 500;
-    border-bottom: 2px solid #5243C2;
-    padding-bottom: 10px;
-}
-
-.header-right button{
-    border: none;
-    border-radius: 20px;
-    padding: 8px 24px;
-    background-color: #FFEDED;
-    color: #FF4D4F;
-    cursor: pointer;
-    font-weight: 500;
-    font-size: 16px;
-} 
-
-.header-right{
-    display: flex;
-    align-items: center;
-    gap: 60px;
-}
-
-.header-left nav ul li a{
-    color: black;
-    text-decoration: none;
-}
-
-.container{
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-.hero{
-    
-}
-
-.hero-left{
-    max-width: 482px;
-}
-
-.hero-left h1{
-    font-size: 72px;
+.burger-right h4{
+    font-size: 36px;
     font-weight: 400;
+    margin-bottom: 24px;
 }
 
-.hero-left p{
-    font-size: 20px;
-    color: #676D77;
+.burger-properties{
+    display: flex;
+    gap: 12px;
+    margin-bottom: 68px;
+}
+
+.burger-property{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #cfcfdf;
+    border-radius: 50px;
+    padding: 12px 16px;
+}
+
+.burger-red{
+    color: #FF4D4F;
+    font-size: 36px;
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+
+.burger-text{
+    font-size: 24px;
+    margin-left: 28px;
+    margin-bottom: 28px;
+}
+
+.burger-gray{
+    color: #949BA6;
+}
+
+.ketchup{
+    float: right;
+}
+
+.burger-price{
+    background-color: #5243C2;
+    border-radius: 99px;
+    padding: 12px 24px;
+    color: white;
+    font-size: 36px;
+    font-weight: 800;
+    font-style: italic;
+
+    position: absolute;
+    top: 50%;
+    right: 30px;
+}
+
+.burger-center{
+    position: relative;
+}
+
+.burger-order{
+    display: flex;
+    justify-content: center;
+}
+
+.order{
+    background-color: #BE2B20;
+    border-radius: 99px;
+    padding: 12px 24px;
+    color: white;
+    font-size: 36px;
+    font-weight: 800;
+    font-style: italic;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.ingredient{
+    width: 140px;
+    height: 180px;
+    border: 1px solid #ccd4d7;
+    border-radius: 20px;
+    padding: 24px 18px;
+}
+
+.ingredient-image{
+    display: flex;
+    height: 60px;
+    margin-bottom: 12px;
+}
+
+.ingredient img{
+    width: 100%;
+}
+
+.ingredient h5{
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 12px;
 }
